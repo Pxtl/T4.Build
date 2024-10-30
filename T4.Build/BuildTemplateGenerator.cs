@@ -71,7 +71,7 @@ namespace T4.Build
                 {
                     try
                     {
-                        var pt = ParsedTemplate.FromText(File.ReadAllText(TemplateFile), this);
+                        var pt = ParseTemplate(TemplateFile, File.ReadAllText(TemplateFile));
                         if (pt.Errors.HasErrors)
                             Errors.AddRange(pt.Errors);
                         else
@@ -114,7 +114,8 @@ namespace T4.Build
                     return true;
                 }
             }
-            return ProcessTemplate(TemplateFile, OutputFile);
+            // end async here.
+            return ProcessTemplateAsync(TemplateFile, OutputFile).Result;
         }
 
     }
