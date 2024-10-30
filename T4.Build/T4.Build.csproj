@@ -12,6 +12,7 @@
   <PropertyGroup>
     <Version Condition=" '$(VersionSuffix)' != '' ">$(VersionPrefix)-$(VersionSuffix)</Version>
     <Version Condition=" '$(Version)' == '' ">$(VersionPrefix)</Version>
+    <PackageReadmeFile>..\README.md</PackageReadmeFile>
     <NuspecFile>$(MSBuildProjectName).nuspec</NuspecFile>
     <NuspecProperties>configuration=$(Configuration);framework=$(TargetFramework);version=$(Version)</NuspecProperties>
   </PropertyGroup>
