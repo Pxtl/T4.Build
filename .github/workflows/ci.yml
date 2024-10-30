@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - pxtlca.main
+    tags:        
+      - '*'
   pull_request:
 
 jobs:
