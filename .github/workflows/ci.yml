@@ -57,7 +57,7 @@ jobs:
           }
           dotnet pack --configuration=Release @params
       - name: Upload NuGet package artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: nuget-package
           path: T4.Build/bin/Release/T4.Build.*.nupkg
