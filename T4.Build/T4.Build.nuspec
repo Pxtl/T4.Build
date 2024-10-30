@@ -29,7 +29,7 @@ More information: https://github.com/Pxtl/T4.Build#readme</description>
     <file src="bin/$configuration$/$framework$/*.dll" exclude="**/Microsoft.CodeAnalysis*.dll;**/System.Reflection.Metadata.dll;**/System.Collections.Immutable.dll" target="tools/" />
     <file src="bin/$configuration$/$framework$/*.runtimeconfig.json" target="tools/" />
     <file src="build/common.targets" target="build/common.targets" />
-    <file src="build/single.targets" target="build/T4.Build.targets" />
-    <file src="build/multi.targets" target="buildMultitargeting/T4.Build.targets" />
+    <file src="build/single.targets" target="build/PxtlCa.T4.Build.targets" />
+    <file src="build/multi.targets" target="buildMultitargeting/PxtlCa.T4.Build.targets" />
   </files>
 </package>
