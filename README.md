@@ -1,5 +1,12 @@
 ## T4.Build
 
+### Fork Notes
+
+This version of T4.Build is forked from https://github.com/jgiannuzzi/T4.Build to update some dependencies and fix
+a bug or two.
+
+### Description
+
 T4.Build is a tool to automatically transform T4 templates during build.
 
 It is similar to the functionality provided by Visual Studio, except it works anywhere where you have a .NET (Core) runtime installed.
